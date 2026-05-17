@@ -269,46 +269,6 @@ main h2{
         margin-left: 10px;
         
     }
-    h1{
-        font-size: 500%;
-        margin: px;
-    }
-    h2{
-        font-size: 400%;
-    }
-    .menu>ul>li {
-        font-size: 350%;
-        width: 100%;
-    }
-    .menu svg{
-        scale: 4.5;
-        margin: 20px;
-    }
-    li a{
-        width: calc(100vw - 160px);
-    }
-    li a:hover{
-        border-radius: 20px;
-    }
-    .menu label{
-        width: 100%;
-        height: fit-content;
-    }
-    header{
-        height: 120px;
-    }
-    header label{
-        scale: 1.5;
-        margin: 30px;
-        display: flex;
-    }
-    #content{
-        top: 50px;
-    }
-    .kafelek{
-        scale: 2.5;
-        margin: 100px;
-        font-size: 120%
-    }
+
     
 }
