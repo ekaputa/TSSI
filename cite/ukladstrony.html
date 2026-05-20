@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eryk Kaputa">
-    <title>TSSI - strona główna</title>
-    <link rel="stylesheet" href="css.css">
+    <title>TSSI - układ strony</title>
+    <link rel="stylesheet" href="../css.css">
 </head>
 <body>
     <div id="all">
@@ -17,6 +17,7 @@
                 <line x1="5" y1="40" x2="45" y2="40"/>
             </svg></label>
             <h1>TSSI</h1>
+            <div><h1 id="temat">układ strony</h1></div>
         </header>
         <div id="content">
             <input type="checkbox" id="menu_zwijane" style="display: none;" checked>
@@ -25,7 +26,7 @@
            
         <div class="menu">
 
-            <a href="#"><h2>strona główna</h2></a>
+            <a href="../index.html"><h2>strona główna</h2></a>
             <br><br>
             <h2>tematy</h2>
                 <ul>
@@ -37,13 +38,12 @@
                             </svg>wprowadzenie</label>
                             
                             <ul>
-                                <li><a href="cite/wprowadzenie.html#podtemat1">teoria</a></li>
-                                <li><a href="cite/wprowadzenie.html#podtemat2">znaczniki</a></li>
+                                <li><a href="wprowadzenie.html#podtemat1">teoria</a></li>
+                                <li><a href="wprowadzenie.html#podtemat2">znaczniki</a></li>
                                 
                             </ul>
                         
-                    </li>
-                    <li>
+                    </li><li>
                             <input type="checkbox" id="temat2" class="tematy" style="display: none;" >
                             
                             <label for="temat2"><svg width="13" height="13">
@@ -62,13 +62,13 @@
                             
                             <label for="temat3"><svg width="13" height="13">
                                 <polygon points="1,1 7,7 1,13 12,7" style="fill: lightslategray; stroke: lightslategray; stroke-width: 1; stroke-linecap: round;"/>
-                            </svg>tablice i listy</label>
+                            </svg>tabele i listy</label>
                             
                             <ul>
-                                <li><a href="cite/tabeleilisty.html#podtemat1">tabele</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat2">atrybuty tabel</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat3">listy</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat4">zagnieżdżanie</a></li>
+                                <li><a href="tabeleilisty.html#podtemat1">tabele</a></li>
+                                <li><a href="tabeleilisty.html#podtemat2">atrybuty tabel</a></li>
+                                <li><a href="tabeleilisty.html#podtemat3">listy</a></li>
+                                <li><a href="tabeleilisty.html#podtemat4">zagnieżdżanie</a></li>
                             </ul>
                         
                     </li><li>
@@ -79,10 +79,10 @@
                             </svg>multimedia</label>
                             
                             <ul>
-                                <li><a href="cite/multimedia.html#podtemat1">obrazy</a></li>
-                                <li><a href="cite/multimedia.html#podtemat2">audio i wideo</a></li>
-                                <li><a href="cite/multimedia.html#podtemat3">atrybuty</a></li>
-                                <li><a href="cite/multimedia.html#podtemat4">iframe</a></li>
+                                <li><a href="multimedia.html#podtemat1">obrazy</a></li>
+                                <li><a href="multimedia.html#podtemat2">audio i wideo</a></li>
+                                <li><a href="multimedia.html#podtemat3">atrybuty</a></li>
+                                <li><a href="multimedia.html#podtemat4">iframe</a></li>
                             </ul>
                         
                     </li><li>
@@ -146,8 +146,6 @@
                         
                     </li>
                     
-
-                    
                     
                 </ul>
         
@@ -156,21 +154,109 @@
         <h3>Eryk Kaputa 1P</h3>
         </footer>
         </div>
-        <main>
-            <h1> Tworzenie Statycznych Stron Internetowych</h1>
-            <h2>Wszytko co potrzebujesz wiedzieć żeby zacząć swoją przygodę ze stronami internetowymi. Na tej stronie znajdziesz wszytko, co powinien wiedzieć początkujący programista. </h2>
+      <main>
 
-            <div class="kafelki">
-                <a class="kafelek" href="cite/wprowadzenie.html">wprowadzenie</a>
-                <a class="kafelek" href="cite/css.html">CSS</a>
-                <a class="kafelek" href="cite/tabeleilisty.html">tabele i listy</a>
-                <a class="kafelek" href="cite/multimedia.html">multimedia</a>
-                <a class="kafelek" href="cite/formularze.html">formularze</a>
-                <a class="kafelek" href="cite/ukladstrony.html">układ strony</a>
-                <a class="kafelek" href="cite/responsywnosc.html">responsywność</a>
-                <a class="kafelek" href="cite/animacje.html">animacje</a>
-            </div>
-        </main>
+    <h1 id="podtemat1">Układ strony HTML</h1>
+
+    <h2>Najważniejsze pojęcia</h2>
+
+    <div class="tekst">
+
+        <h3>układ strony (layout) - </h3>
+        <p>Układ strony określa sposób rozmieszczenia elementów na stronie internetowej, takich jak nagłówek, menu, treść oraz stopka.</p>
+        <br><br>
+
+        <h3>&lt;header&gt; - </h3>
+        <p>Znacznik nagłówka strony lub sekcji. Zawiera zwykle logo, tytuł strony lub menu nawigacyjne.</p>
+        <br><br>
+
+        <h3>&lt;main&gt; - </h3>
+        <p>Główna część strony, w której znajduje się najważniejsza treść.</p>
+        <br><br>
+
+        <h3>&lt;nav&gt; - </h3>
+        <p>Sekcja nawigacyjna zawierająca menu i linki do innych podstron.</p>
+        <br><br>
+
+        <h3>&lt;section&gt; - </h3>
+        <p>Blok tematyczny strony, grupujący powiązane treści.</p>
+        <br><br>
+
+        <h3>&lt;article&gt; - </h3>
+        <p>Niezależna część treści, np. wpis blogowy lub artykuł.</p>
+        <br><br>
+
+        <h3>&lt;aside&gt; - </h3>
+        <p>Treść poboczna, np. reklamy, dodatkowe informacje lub boczny panel.</p>
+        <br><br>
+
+        <h3>&lt;footer&gt; - </h3>
+        <p>Stopka strony znajdująca się na dole, zawiera np. kontakt, prawa autorskie lub linki.</p>
+        <br><br>
+
+    </div>
+
+    <h1 id="podtemat2">Techniki układu strony</h1>
+
+    <h2>Podstawowe sposoby budowy layoutu</h2>
+
+    <div class="tekst">
+
+        <h3>display: block - </h3>
+        <p>Elementy zajmują całą dostępną szerokość i układają się jeden pod drugim.</p>
+        <br><br>
+
+        <h3>display: inline - </h3>
+        <p>Elementy układają się obok siebie w jednej linii, nie rozpoczynając nowego wiersza.</p>
+        <br><br>
+
+        <h3>display: inline-block - </h3>
+        <p>Łączy cechy block i inline – elementy są obok siebie, ale mogą mieć szerokość i wysokość.</p>
+        <br><br>
+
+        <h3>flexbox - </h3>
+        <p>Nowoczesny sposób układania elementów w jednej osi (poziomej lub pionowej), bardzo elastyczny i często używany.</p>
+        <br><br>
+
+        <h3>grid - </h3>
+        <p>System siatki pozwalający tworzyć zaawansowane układy stron w dwóch wymiarach (wiersze i kolumny).</p>
+        <br><br>
+
+        <h3>position - </h3>
+        <p>Właściwość określająca pozycjonowanie elementów, np. static, relative, absolute, fixed.</p>
+        <br><br>
+
+    </div>
+
+    <h1 id="podtemat3">Elementy układu strony</h1>
+
+    <h2>Typowe części stron internetowych</h2>
+
+    <div class="tekst">
+
+        <h3>nagłówek - </h3>
+        <p>Górna część strony zawierająca logo, tytuł i menu.</p>
+        <br><br>
+
+        <h3>menu nawigacyjne - </h3>
+        <p>Lista linków umożliwiających przechodzenie między podstronami.</p>
+        <br><br>
+
+        <h3>sekcja główna - </h3>
+        <p>Centralna część strony z najważniejszą treścią.</p>
+        <br><br>
+
+        <h3>panel boczny - </h3>
+        <p>Dodatkowa kolumna z informacjami, reklamami lub linkami.</p>
+        <br><br>
+
+        <h3>stopka - </h3>
+        <p>Dolna część strony zawierająca informacje kontaktowe i prawa autorskie.</p>
+        <br><br>
+
+    </div>
+
+</main>
     </div>
     </div>
 </body>

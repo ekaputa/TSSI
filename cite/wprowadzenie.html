@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eryk Kaputa">
-    <title>TSSI - strona główna</title>
-    <link rel="stylesheet" href="css.css">
+    <title>TSSI - wprowadzenie</title>
+    <link rel="stylesheet" href="../css.css">
 </head>
 <body>
     <div id="all">
@@ -17,6 +17,7 @@
                 <line x1="5" y1="40" x2="45" y2="40"/>
             </svg></label>
             <h1>TSSI</h1>
+            <div><h1 id="temat">wprowadzenie</h1></div>
         </header>
         <div id="content">
             <input type="checkbox" id="menu_zwijane" style="display: none;" checked>
@@ -25,7 +26,7 @@
            
         <div class="menu">
 
-            <a href="#"><h2>strona główna</h2></a>
+            <a href="../index.html"><h2>strona główna</h2></a>
             <br><br>
             <h2>tematy</h2>
                 <ul>
@@ -37,13 +38,12 @@
                             </svg>wprowadzenie</label>
                             
                             <ul>
-                                <li><a href="cite/wprowadzenie.html#podtemat1">teoria</a></li>
-                                <li><a href="cite/wprowadzenie.html#podtemat2">znaczniki</a></li>
+                                <li><a href="#podtemat1">teoria</a></li>
+                                <li><a href="#podtemat2">znaczniki</a></li>
                                 
                             </ul>
                         
-                    </li>
-                    <li>
+                    </li><li>
                             <input type="checkbox" id="temat2" class="tematy" style="display: none;" >
                             
                             <label for="temat2"><svg width="13" height="13">
@@ -51,7 +51,7 @@
                             </svg>CSS</label>
                             
                             <ul>
-                                <li><a href="css.html#podtemat1">podstawy</a></li>
+                                <li><a href="css.html#podtemat1">podstway CSS</a></li>
                                 <li><a href="css.html#podtemat2">rodzaje</a></li>
                                 <li><a href="css.html#podtemat3">selektory</a></li>
                                 <li><a href="css.html#podtemat4">właściwości</a></li>
@@ -62,13 +62,13 @@
                             
                             <label for="temat3"><svg width="13" height="13">
                                 <polygon points="1,1 7,7 1,13 12,7" style="fill: lightslategray; stroke: lightslategray; stroke-width: 1; stroke-linecap: round;"/>
-                            </svg>tablice i listy</label>
+                            </svg>tabele i listy</label>
                             
                             <ul>
-                                <li><a href="cite/tabeleilisty.html#podtemat1">tabele</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat2">atrybuty tabel</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat3">listy</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat4">zagnieżdżanie</a></li>
+                                <li><a href="tabeleilisty.html#podtemat1">tabele</a></li>
+                                <li><a href="tabeleilisty.html#podtemat2">atrybuty tabel</a></li>
+                                <li><a href="tabeleilisty.html#podtemat3">listy</a></li>
+                                <li><a href="tabeleilisty.html#podtemat4">zagnieżdżanie</a></li>
                             </ul>
                         
                     </li><li>
@@ -79,10 +79,10 @@
                             </svg>multimedia</label>
                             
                             <ul>
-                                <li><a href="cite/multimedia.html#podtemat1">obrazy</a></li>
-                                <li><a href="cite/multimedia.html#podtemat2">audio i wideo</a></li>
-                                <li><a href="cite/multimedia.html#podtemat3">atrybuty</a></li>
-                                <li><a href="cite/multimedia.html#podtemat4">iframe</a></li>
+                                <li><a href="multimedia.html#podtemat1">obrazy</a></li>
+                                <li><a href="multimedia.html#podtemat2">audio i wideo</a></li>
+                                <li><a href="multimedia.html#podtemat3">atrybuty</a></li>
+                                <li><a href="multimedia.html#podtemat4">iframe</a></li>
                             </ul>
                         
                     </li><li>
@@ -145,7 +145,6 @@
                             </ul>
                         
                     </li>
-                    
 
                     
                     
@@ -157,18 +156,88 @@
         </footer>
         </div>
         <main>
-            <h1> Tworzenie Statycznych Stron Internetowych</h1>
-            <h2>Wszytko co potrzebujesz wiedzieć żeby zacząć swoją przygodę ze stronami internetowymi. Na tej stronie znajdziesz wszytko, co powinien wiedzieć początkujący programista. </h2>
+            <h1 id="podtemat1"> Teoria</h1>
+            <h2>Najważniejsze pojęcia </h2>
+            <div class="tekst">
+                <h3>html - </h3>
+                <p>hipertekstowy język znaczników. Używany do tworzenia stron internetowych. <u>Nie</u> jest językiem programowania. Powstał na podstawie XML.</p>
+                <br><br>
+                <h3>lorem ipsum - </h3> strona internetowa służąca do generowania tekstu wypełniającego. Zaczyna się: Lorem ipsum dolor sit amet...
+                <br><br>
+                <h3>HTML 5 -</h3><p>najnowsza wersja html. Dzieli tekst ma bloki. Tekst jest formatowany przez arkusze stylów.</p>
+                <br><br>
+                <h3>paser -</h3><p>sprawdza poprawność składniową. Dla html nazywa się walidatorem.</p>
+                <br><br>
+                <h3>DOCTYPE -</h3><p>pierwsza linijka strony inernetowej. Jest w niej podana wersja html. Dla html 5: <strong> &lt;!DOCTYPE html&gt;</strong>.</p>
+                <br><br>
+                <h3>witryna internetowa - </h3><p>zbiór stron internetowych. Jeśli jest na jeden temat nazywamy ją <strong>wortalem</strong>, a jeżeli na wiele tematów nazywamy <strong>portalem</strong>.</p>
+                <br><br>
+                <h3>przeglądarka - </h3><p>wysyła i odbiera żądania od strony www. Kreuje strony internetowe i je pobiera.</p>
+                <br><br>
+                <h3>znacznik - </h3><p>jest to instrukcja formatująca. Dzieli stronę na elementy. Informuje przeglądarke jak przekształcić tekst w stronę www. Bez niego dokument html to zwykły plik tekstowy. Znaczniki zapisuje się w nawiasach ostrych <strong>&lt;znacznik&gt;</strong>. Znaczniki kontenerowe zamykamy dodając ukośnik przed nazwę; <strong>&lt;/znacznik&gt;</strong>. Znaczniki zamykamy od ostatniego otwartego. Nie wszytskie znaczniki mogą być znacznikami wszytskich znaczników.</p>
+                <br><br>
+                <h3>5 zasad tworzenia html 5:</h3>
+                <ol>
+                    <li>Nigdy nie krzyżuj znaczników</li>
+                    <li>Wszytskie znaczniki i atrybuty zapisuj małymi literami.</li>
+                    <li>Wartości atrybutów zapisuj w cudzysłowie małymi literami</li>
+                    <li>Zawsze zamykaj znaczniki kontenerowe</li>
+                    <li>Używaj encji gdzie potrzeba</li>
+                </ol>
+                <h3>encje - </h3><p>używane do zapisania różnych znaków w sposób, żeby się wyświetlały jak standardowy tekst. Zapisuje je się za pomocą '&', tekstu oraz ';' , np. znak mniejszości <strong>'&lt;' zapisujemy "&amp;lt;"</strong>.</p>
+                <br><br>
+                
+                <br><br>
+                <h3> podstawowa struktura html:</h3>
+                <ul>
+                    <li>&lt;!DOCTYPE html&gt;</li>
+                    <li>&lt;html&gt;</li>
+                    <li>&lt;head&gt;</li>
+                    <li>&lt;/head&gt;</li>
+                    <li>&lt;body&gt;</li>
+                    <li>&lt;/body&gt;</li>
+                    <li>&lt;/html&gt;</li>
+                </ul>
+            </div>
+            <h1 id="podtemat2">Znaczniki</h1>
+            <h2>Najważniejsze znaczniki</h2>
+            <div class="tekst">
+                <h3>meta - </h3><p>znaczniki zaiwerające metainformacje na temat strony, jak autora czy prawa autroskie. Zapisujemy je w headzie i nie są wyświetlane na stronie.</p>
+                <br><br>
+                <h3>&lt;h1&gt; - &lt;h6&gt; -</h3><p>są to znaczniki nagłówkowe. Im niższa liczba tym ważniejszy nagłówek. <strong>Ważne, żeby nie pomijać numerów</strong>, iż jest to błąd składniowy na walidatorze</p>
+                <br><br>
+                <h3>&lt;p&gt; - </h3><p>znacznik paragrafowy. Umieszcza się w nim tekst w formie paragrafów.</p>
+                <br><br>
+                <h3>&lt;small&gt; - </h3><p>definuje mały tekst, nie ma teorii.</p>
+                <br><br>
+                <h3>&lt;strong&gt; - </h3><p>definuje ważny tekst.</p>
+                <br><br>
+                <h3>&lt;cite&gt; - </h3><p>definuje tytuł pracy kreatywnej, np. książki.</p>
+                <br><br>
+                <h3>&lt;q&gt;</h3><p>domyślnie dokłada cytaty. Cytat wtrącony.</p>
+                <br><br>
+                <h3>&lt;blockqoute&gt; - </h3><p>blok kontenerowy na duże cytaty.</p>
+                <br><br>
+                <h3>&lt;code&gt; - </h3><p>służy do wstawiania kodu.</p>
+                <br><br>
+                <h3>&lt;pre&gt; - </h3><p>preformatuje tekst.</p>
+                <br><br>
+                <h3>&lt;del&gt; - </h3><p>definiuje przekreślony tekst.</p>
+                <br><br>
+                <h3>&lt;sub&gt; - </h3><p>dolny index.</p>
+                <br><br>
+                <h3>&lt;sup&gt; - </h3><p>górny index.</p>
+                <br><br>
+                <h3>&lt;uns&gt; - </h3><p>podkreślenie.</p>
+                <br><br>
+                <h3>&lt;i&gt; - </h3><p>kursywa.</p>
+                <br><br>
+                <h3>&lt;br&gt; - </h3><p>przerzuca tekst do następnej lini.</p>
+                <br><br>
+                <h3>&lt;div&gt; - </h3><p>pojemnik kontenerowy typu blokowego.</p>
+                <br><br>
+                <h3>&lt;span&gt; - </h3><p>pojemnik kontenerowy typu liniowego.</p>
 
-            <div class="kafelki">
-                <a class="kafelek" href="cite/wprowadzenie.html">wprowadzenie</a>
-                <a class="kafelek" href="cite/css.html">CSS</a>
-                <a class="kafelek" href="cite/tabeleilisty.html">tabele i listy</a>
-                <a class="kafelek" href="cite/multimedia.html">multimedia</a>
-                <a class="kafelek" href="cite/formularze.html">formularze</a>
-                <a class="kafelek" href="cite/ukladstrony.html">układ strony</a>
-                <a class="kafelek" href="cite/responsywnosc.html">responsywność</a>
-                <a class="kafelek" href="cite/animacje.html">animacje</a>
             </div>
         </main>
     </div>

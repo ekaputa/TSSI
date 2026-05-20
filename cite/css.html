@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eryk Kaputa">
-    <title>TSSI - strona główna</title>
-    <link rel="stylesheet" href="css.css">
+    <title>TSSI - CSS</title>
+    <link rel="stylesheet" href="../css.css">
 </head>
 <body>
     <div id="all">
@@ -17,6 +17,7 @@
                 <line x1="5" y1="40" x2="45" y2="40"/>
             </svg></label>
             <h1>TSSI</h1>
+            <div><h1 id="temat">CSS</h1></div>
         </header>
         <div id="content">
             <input type="checkbox" id="menu_zwijane" style="display: none;" checked>
@@ -25,11 +26,10 @@
            
         <div class="menu">
 
-            <a href="#"><h2>strona główna</h2></a>
+            <a href="../index.html"><h2>strona główna</h2></a>
             <br><br>
             <h2>tematy</h2>
-                <ul>
-                    <li>
+                <ul><li>
                             <input type="checkbox" id="temat1" class="tematy" style="display: none;" >
                             
                             <label for="temat1"><svg width="13" height="13">
@@ -37,8 +37,8 @@
                             </svg>wprowadzenie</label>
                             
                             <ul>
-                                <li><a href="cite/wprowadzenie.html#podtemat1">teoria</a></li>
-                                <li><a href="cite/wprowadzenie.html#podtemat2">znaczniki</a></li>
+                                <li><a href="wprowadzenie.html#podtemat1">teoria</a></li>
+                                <li><a href="wprowadzenie.html#podtemat2">znaczniki</a></li>
                                 
                             </ul>
                         
@@ -62,13 +62,13 @@
                             
                             <label for="temat3"><svg width="13" height="13">
                                 <polygon points="1,1 7,7 1,13 12,7" style="fill: lightslategray; stroke: lightslategray; stroke-width: 1; stroke-linecap: round;"/>
-                            </svg>tablice i listy</label>
+                            </svg>tabele i listy</label>
                             
                             <ul>
-                                <li><a href="cite/tabeleilisty.html#podtemat1">tabele</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat2">atrybuty tabel</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat3">listy</a></li>
-                                <li><a href="cite/tabeleilisty.html#podtemat4">zagnieżdżanie</a></li>
+                                <li><a href="tabeleilisty.html#podtemat1">tabele</a></li>
+                                <li><a href="tabeleilisty.html#podtemat2">atrybuty tabel</a></li>
+                                <li><a href="tabeleilisty.html#podtemat3">listy</a></li>
+                                <li><a href="tabeleilisty.html#podtemat4">zagnieżdżanie</a></li>
                             </ul>
                         
                     </li><li>
@@ -79,10 +79,10 @@
                             </svg>multimedia</label>
                             
                             <ul>
-                                <li><a href="cite/multimedia.html#podtemat1">obrazy</a></li>
-                                <li><a href="cite/multimedia.html#podtemat2">audio i wideo</a></li>
-                                <li><a href="cite/multimedia.html#podtemat3">atrybuty</a></li>
-                                <li><a href="cite/multimedia.html#podtemat4">iframe</a></li>
+                                <li><a href="multimedia.html#podtemat1">obrazy</a></li>
+                                <li><a href="multimedia.html#podtemat2">audio i wideo</a></li>
+                                <li><a href="multimedia.html#podtemat3">atrybuty</a></li>
+                                <li><a href="multimedia.html#podtemat4">iframe</a></li>
                             </ul>
                         
                     </li><li>
@@ -157,19 +157,148 @@
         </footer>
         </div>
         <main>
-            <h1> Tworzenie Statycznych Stron Internetowych</h1>
-            <h2>Wszytko co potrzebujesz wiedzieć żeby zacząć swoją przygodę ze stronami internetowymi. Na tej stronie znajdziesz wszytko, co powinien wiedzieć początkujący programista. </h2>
+            <h1 id="podtemat1">podstawy</h1>
 
-            <div class="kafelki">
-                <a class="kafelek" href="cite/wprowadzenie.html">wprowadzenie</a>
-                <a class="kafelek" href="cite/css.html">CSS</a>
-                <a class="kafelek" href="cite/tabeleilisty.html">tabele i listy</a>
-                <a class="kafelek" href="cite/multimedia.html">multimedia</a>
-                <a class="kafelek" href="cite/formularze.html">formularze</a>
-                <a class="kafelek" href="cite/ukladstrony.html">układ strony</a>
-                <a class="kafelek" href="cite/responsywnosc.html">responsywność</a>
-                <a class="kafelek" href="cite/animacje.html">animacje</a>
-            </div>
+            <h2>Najważniejsze informacje o CSS</h2>
+
+<div class="tekst">
+
+    <h3>CSS - </h3>
+    <p>CSS czyli Cascading Style Sheets to kaskadowe arkusze stylów. Służą do zmieniania wyglądu strony internetowej. Dzięki css można zmieniać kolory, czcionki, odstępy, animacje, położenie elementów i wiele innych rzeczy związanych z wyglądem strony. Html odpowiada za strukturę strony, natomiast css odpowiada za jej wygląd.</p>
+    <br><br>
+
+    <h3>arkusz stylów - </h3>
+    <p>Plik zawierający style css. Najczęściej zapisuje się go z rozszerzeniem .css i podłącza do strony html.</p>
+    <br><br>
+
+    <h3>składnia css - </h3>
+    <p>Każdy styl css składa się z selektora oraz deklaracji zapisanych w nawiasach klamrowych.</p>
+
+    <p><strong>Przykład:</strong></p>
+
+    <p><code>p { color: red; font-size: 20px; }</code></p>
+
+    <p>W tym przykładzie selektorem jest p, właściwościami są color oraz font-size, a wartościami red i 20px.</p>
+    <br><br>
+
+    <h3>komentarze css - </h3>
+    <p>Komentarze służą do opisywania kodu css. Nie są widoczne na stronie internetowej.</p>
+
+    <p><strong>Przykład:</strong></p>
+
+    <p><code>/* komentarz */</code></p>
+
+</div>
+
+<h1 id="podtemat2">rodzaje</h1>
+<h2>Różne opcje użycia CSS</h2>
+
+<div class="tekst">
+
+    <h3>inline css - </h3>
+    <p>Styl zapisany bezpośrednio w znaczniku html za pomocą atrybutu style.</p>
+
+    <p><strong>Przykład:</strong></p>
+
+    <p><code>&lt;p style="color:red;"&gt;Tekst&lt;/p&gt;</code></p>
+    <br><br>
+
+    <h3>internal css - </h3>
+    <p>Styl zapisany w znaczniku &lt;style&gt; w sekcji head dokumentu html.</p>
+    <br><br>
+
+    <h3>external css - </h3>
+    <p>Styl zapisany w osobnym pliku .css. Jest to najlepszy sposób dodawania css do strony.</p>
+    <br><br>
+
+    <h3>&lt;link&gt; - </h3>
+    <p>Znacznik służący do podłączania pliku css do dokumentu html.</p>
+
+    <p><strong>Przykład:</strong></p>
+
+    <p><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></p>
+
+</div>
+
+<h1 id="podtemat3">selektory</h1>
+<h2>Wybieranie znaczników</h2>
+
+<div class="tekst">
+
+    <h3>selektor znacznika - </h3>
+    <p>Pozwala stylować wszystkie znaczniki danego typu np. wszystkie paragrafy lub nagłówki.</p>
+    <br><br>
+
+    <h3>selektor klasy - </h3>
+    <p>Pozwala przypisać styl do wielu elementów. Klasy zapisujemy za pomocą kropki.</p>
+
+    <p><strong>Przykład:</strong></p>
+
+    <p><code>.menu { background-color: blue; }</code></p>
+    <br><br>
+
+    <h3>selektor id - </h3>
+    <p>Pozwala ostylować jeden konkretny element. Id zapisujemy za pomocą znaku #.</p>
+    <br><br>
+
+    <h3>selektor uniwersalny - </h3>
+    <p>Zapisywany za pomocą gwiazdki *. Styluje wszystkie elementy na stronie.</p>
+    <br><br>
+
+    <h3>selektor grupowy - </h3>
+    <p>Pozwala stylować kilka elementów jednocześnie.</p>
+
+    <p><strong>Przykład:</strong></p>
+
+    <p><code>h1, h2, p { color:black; }</code></p>
+
+</div>
+
+<h1 id="podtemat4">właściwości</h1>
+<h2>Najważniejsze właściwości</h2>
+
+<div class="tekst">
+
+    <h3>color - </h3>
+    <p>Zmienia kolor tekstu.</p>
+    <br><br>
+
+    <h3>background-color - </h3>
+    <p>Zmienia kolor tła elementu.</p>
+    <br><br>
+
+    <h3>font-size - </h3>
+    <p>Ustawia rozmiar tekstu.</p>
+    <br><br>
+
+    <h3>font-family - </h3>
+    <p>Zmienia rodzaj czcionki.</p>
+    <br><br>
+
+    <h3>width i height - </h3>
+    <p>Ustawiają szerokość i wysokość elementu.</p>
+    <br><br>
+
+    <h3>margin - </h3>
+    <p>Ustawia odstęp na zewnątrz elementu.</p>
+    <br><br>
+
+    <h3>padding - </h3>
+    <p>Ustawia odstęp wewnątrz elementu.</p>
+    <br><br>
+
+    <h3>border - </h3>
+    <p>Dodaje obramowanie elementu.</p>
+    <br><br>
+
+    <h3>display - </h3>
+    <p>Określa sposób wyświetlania elementu.</p>
+    <br><br>
+
+    <h3>position - </h3>
+    <p>Określa sposób pozycjonowania elementu.</p>
+
+</div>
         </main>
     </div>
     </div>
