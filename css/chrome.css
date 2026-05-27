@@ -1,0 +1,93 @@
+/* ====== BAZA STRONY (CHROME-LIKE) ====== */
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+
+    color: #000;
+    background: #fff;
+}
+
+/* ====== NAGŁÓWKI ====== */
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+  
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+}
+
+
+
+
+/* ====== LISTY ====== */
+
+ul {
+    list-style-type: disc;
+
+
+}
+
+ol {
+    list-style-type: decimal;
+
+
+}
+
+
+
+/* ====== STRUKTURA TEKSTU ====== */
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+small {
+    font-size: smaller;
+}
+
+/* ====== TABELA ====== */
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+td, th {
+    padding: 1px;
+}
+
+/* ====== FORMULARZE ====== */
+
+input, textarea, select, button {
+    font: inherit;
+}

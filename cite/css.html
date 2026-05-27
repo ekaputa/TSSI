@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eryk Kaputa">
     <title>TSSI - CSS</title>
-    <link rel="stylesheet" href="../css.css">
+    <link rel="stylesheet" href="../css/meyer.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/css.css">
 </head>
 <body>
     <div id="all">
@@ -29,7 +31,8 @@
             <a href="../index.html"><h2>strona główna</h2></a>
             <br><br>
             <h2>tematy</h2>
-                <ul><li>
+                <ul>
+                    <li>
                             <input type="checkbox" id="temat1" class="tematy" style="display: none;" >
                             
                             <label for="temat1"><svg width="13" height="13">
@@ -42,8 +45,7 @@
                                 
                             </ul>
                         
-                    </li>
-                    <li>
+                    </li><li>
                             <input type="checkbox" id="temat2" class="tematy" style="display: none;" >
                             
                             <label for="temat2"><svg width="13" height="13">
@@ -55,6 +57,7 @@
                                 <li><a href="css.html#podtemat2">rodzaje</a></li>
                                 <li><a href="css.html#podtemat3">selektory</a></li>
                                 <li><a href="css.html#podtemat4">właściwości</a></li>
+                                <li><a href="css.html#podtemat5">dziedziczenie</a></li>
                             </ul>
                         
                     </li><li>
@@ -108,9 +111,9 @@
                             
                             <ul>
                                 <li><a href="ukladstrony.html#podtemat1">układ strony</a></li>
-                                <li><a href="ukladstrony.html#podtemat2">szerokość i wysokość</a></li>
-                                <li><a href="ukladstrony.html#podtemat3">marginesy i wewnętrzne odstępy</a></li>
-                                <li><a href="ukladstrony.html#podtemat4">pozycjonowanie</a></li>
+                                <li><a href="ukladstrony.html#podtemat2">wymiary</a></li>
+                                <li><a href="ukladstrony.html#podtemat3">marginesy</a></li>
+                                <li><a href="ukladstrony.html#podtemat4">position</a></li>
                                 <li><a href="ukladstrony.html#podtemat5">flexbox</a></li>
                             </ul>
                         
@@ -126,7 +129,6 @@
                                 <li><a href="responsywnosc.html#podtemat2">media queries</a></li>
                                 <li><a href="responsywnosc.html#podtemat3">skalowanie</a></li>
                                 <li><a href="responsywnosc.html#podtemat4">przykłady</a></li>
-                                <li><a href="responsywnosc.html#podtemat5">najlepsze praktyki</a></li>
                             </ul>
                         
                     </li><li id="last-li-menu">
@@ -138,15 +140,13 @@
                             
                             <ul>
                                 <li><a href="animacje.html#podtemat1">animacje</a></li>
-                                <li><a href="animacje.html#podtemat2">transformationy</a></li>
-                                <li><a href="animacje.html#podtemat3">klasy CSS</a></li>
+                                <li><a href="animacje.html#podtemat2">transformacje</a></li>
+                                <li><a href="animacje.html#podtemat3">klasy</a></li>
                                 <li><a href="animacje.html#podtemat4">przykłady</a></li>
-                                <li><a href="animacje.html#podtemat5">najlepsze praktyki</a></li>
+                                <li><a href="animacje.html#podtemat5">SVG</a></li>
                             </ul>
                         
                     </li>
-                    
-
                     
                     
                 </ul>
@@ -157,7 +157,7 @@
         </footer>
         </div>
         <main>
-            <h1 id="podtemat1">podstawy</h1>
+            <h1 id="podtemat1">Podstawy</h1>
 
             <h2>Najważniejsze informacje o CSS</h2>
 
@@ -165,6 +165,10 @@
 
     <h3>CSS - </h3>
     <p>CSS czyli Cascading Style Sheets to kaskadowe arkusze stylów. Służą do zmieniania wyglądu strony internetowej. Dzięki css można zmieniać kolory, czcionki, odstępy, animacje, położenie elementów i wiele innych rzeczy związanych z wyglądem strony. Html odpowiada za strukturę strony, natomiast css odpowiada za jej wygląd.</p>
+    <br><br>
+
+    <h3>kaskadowość - </h3>
+    <p>Kaskadowość oznacza, że style są stosowane w określonej kolejności. Style zapisane później mają wyższy priorytet niż te zapisane wcześniej.</p>
     <br><br>
 
     <h3>arkusz stylów - </h3>
@@ -190,7 +194,7 @@
 
 </div>
 
-<h1 id="podtemat2">rodzaje</h1>
+<h1 id="podtemat2">Rodzaje</h1>
 <h2>Różne opcje użycia CSS</h2>
 
 <div class="tekst">
@@ -220,7 +224,7 @@
 
 </div>
 
-<h1 id="podtemat3">selektory</h1>
+<h1 id="podtemat3">Selektory</h1>
 <h2>Wybieranie znaczników</h2>
 
 <div class="tekst">
@@ -254,7 +258,7 @@
 
 </div>
 
-<h1 id="podtemat4">właściwości</h1>
+<h1 id="podtemat4">Właściwości</h1>
 <h2>Najważniejsze właściwości</h2>
 
 <div class="tekst">
@@ -297,6 +301,40 @@
 
     <h3>position - </h3>
     <p>Określa sposób pozycjonowania elementu.</p>
+
+</div>
+
+<h1 id="podtemat5">Dziedziczenie</h1>
+<h2>Dziedziczenie właściwości</h2>
+<div class="tekst">
+
+
+    <h3>dziedziczenie CSS - </h3>
+    <p>Mechanizm, dzięki któremu elementy potomne przejmują niektóre style od elementów nadrzędnych, np. kolor tekstu lub czcionkę.</p>
+    <br><br>
+
+    <h3>element nadrzędny - </h3>
+    <p>Element zawierający inne elementy wewnątrz siebie.</p>
+    <br><br>
+
+    <h3>element potomny - </h3>
+    <p>Element znajdujący się wewnątrz innego elementu.</p>
+    <br><br>
+
+    <h3>inherit - </h3>
+    <p>Wartość CSS wymuszająca dziedziczenie właściwości od elementu nadrzędnego.</p>
+    <br><br>
+
+    <h3>dziedziczone właściwości - </h3>
+    <p>Najczęściej dziedziczone są kolor tekstu, czcionka oraz wysokość linii.</p>
+    <br><br>
+
+    <h3>brak dziedziczenia - </h3>
+    <p>Niektóre właściwości, np. dotyczące położenia na stronie, marginesów, koloru tła lub obramowania, nie są dziedziczone automatycznie.</p>
+    <br><br>
+
+    <h3>wagi - </h3>
+    <p>Wagi określają priorytet stosowania stylów. Wartości od 0 do 1000 są przypisywane do różnych typów selektorów. Dla selektora znacznika wynosi 1, dla klasy 100, dla id 1000 a dla stylu lokalnego 10000.</p>
 
 </div>
         </main>
