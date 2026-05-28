@@ -283,11 +283,13 @@ main ol li::marker{
 @media (min-width: 210px) and (max-width: 780px) {
     .lewa{
         position: absolute;
-        left:-210px ;
+        left: -210px;
         height: 100%;
         top: 0;
         margin: 0;
         right: 0;
+        box-sizing: border-box;
+        padding-top: 70px;
     }
     #menu_zwijane:not(:checked) ~ .lewa{
         left: 0;
@@ -304,9 +306,7 @@ main ol li::marker{
         transition: all 2s ease, z-index 0s 0s;
     }
     .menu{
-        margin-top: 80px;
         margin-left: 10px;
-        
     }
     header div{
         text-align: right;
